@@ -1,0 +1,37 @@
+
+.signup{
+  display: flow-root;
+  margin: 0 auto;
+  background-color: #E8F8F5;
+  padding: 10%;
+}
+
+input, select{
+  padding: 5px;
+  padding-left: 20%;
+  padding-right: 20%;
+  border-width: 20%;
+  border-style: ridge;
+  border-radius: 15px;
+}
+
+input:focus{
+  outline: none;
+}
+
+select:focus{
+  outline: none;
+}
+
+
+.row{
+  margin: 0 auto;
+}
+
+.head{
+  font-weight:
+}
+
+.head:hover{
+  color: #95BB87;
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Examination System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="signup.js"></script>
+
+    </head>
+    <body onload="startpage()">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Examination System Of CSE</a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form" action="sign_in.php" method="post">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control"name="username">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control" name="pass">
+            </div>
+            <div class="form-group">
+              <select class="form-control" name="desig">
+                  <option value="0">Select Designation</option>
+                  <option value="1">Faculty</option>
+                  <option value="2">Student</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success" name="Login">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 style="font-size:45px;">Welcome to the Examination System of CSE Department</h1>
+        <h1 style="font-size:35px;">Assam University, Silchar</h1>
+        <img src="img/ausLogo.png">
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+
+            <div class="row">
+                <h2 class="head">Sign Up</h2>
+                <hr>
+                <div class="signup" >
+                    <form action="sign_up.php"method="post" id="signUpForm">
+                      <div class="form-group">
+                         <input type="text" placeholder="Enter First Name" class="form-control" name="fname"><br><br>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="text" placeholder="Enter Last Name" class="form-control" name="lname"><br><br>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" placeholder="Enter Email Id" class="form-control" name="email"><br><br>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" placeholder="Enter password" class="form-control" name="password"><br><br>
+                      </div>
+                      <div class="form-group">
+                        <select onchange="signup(value)" class="form-control" name="designation">
+                            <option value="0">Select Designation</option>
+                            <option value="1">Faculty</option>
+                            <option value="2">Student</option>
+                        </select><br><br>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" placeholder="Enter Roll" id="roll" class="form-control" name="roll"><br><br>
+                      </div>
+                      <div class="form-group">
+                        <input type="number" placeholder="Enter Number" id="number" class="form-control" name="number"><br><br>
+                      </div>
+                      <div class="form-group" >
+                        <select id="semester" class="form-control" name="sem">
+                            <option value="0">Select Semester</option>
+                            <option value="1">1st Sem </option>
+                            <option value="2">2nd Sem</option>
+                            <option value="3">3rd Sem</option>
+                            <option value="4">4th Sem</option>
+                            <option value="5">5th Sem</option>
+                            <option value="6">6th Sem</option>
+                            <option value="7">7th Sem</option>
+                            <option value="8">8th Sem</option>
+                        </select><br><br>
+                      </div>
+                        <button type="submit"class="btn btn-success" name="Signup">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Assam University ,Silchar</p>
+      </footer>
+    </div>
+    <!-- /container -->
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>
